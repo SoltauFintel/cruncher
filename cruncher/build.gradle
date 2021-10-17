@@ -1,0 +1,19 @@
+apply plugin: 'application'
+apply plugin: 'eclipse'
+
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
+compileJava.options.encoding = 'windows-1252'
+compileTestJava.options.encoding = 'windows-1252'
+
+application {
+    mainClass = 'de.mwvb.cruncher.CruncherApp'
+}
+
+//dependencies {
+//}
+//
+//repositories {
+//	mavenCentral()
+//	maven { url 'https://jitpack.io' }
+//}

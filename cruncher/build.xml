@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="windows-1252"?>
+<project name="cruncher" basedir=".">
+
+	<target name="eclipse">
+		<gradle task="eclipse"/>
+	</target>
+
+	<macrodef name="gradle">
+		<attribute name="task"/>
+		<sequential>
+	        <exec executable="cmd" failonerror="true">
+	        	<arg line="/c gradlew.bat -g C:\jarcache\gradle @{task}"/>
+	        </exec>
+		</sequential>
+	</macrodef>
+	
+</project>
